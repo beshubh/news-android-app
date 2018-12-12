@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:minHeight="300dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/magnitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="36dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:text="@string/authorname"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/author_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/magnitude"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/magnitude"
+            android:text="sample author"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/primary_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/magnitude"
+            android:layout_marginTop="23dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingLeft="16dp"
+            android:text="@string/title"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/title_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignStart="@+id/author_text_view"
+            android:layout_marginBottom="16dp"
+            android:layout_alignTop="@+id/primary_location"
+            android:text="sample title"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/title_text_view"
+            android:layout_below="@+id/title_text_view"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingLeft="16dp"
+            android:text="@string/desc"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/des_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/title_text_view"
+            android:layout_below="@+id/des"
+            android:text="sampel description"
+            android:paddingLeft="16dp"
+            android:textColor="@android:color/black" />
+
+    </RelativeLayout>
+</RelativeLayout>
